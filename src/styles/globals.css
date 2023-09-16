@@ -14,7 +14,7 @@ body,
   --gray-color: #e6e6e6;
   --red-color: #fe330a;
 
-  --headlineBig: clamp(5rem, 12.9vw, 15rem);
+  --headlineBig: clamp(4rem, 12.9vw, 15rem);
   --headlineMediumBig: clamp(5rem, 13.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 1vw, 1.3rem);
@@ -49,8 +49,9 @@ body,
   padding-left: 10px;
 }
 
-.hero__header .hero-first-text {
-  font-size: var(--headlineMediumBig);
+.hero__header .hero-second-text {
+  font-size: var(--headlineBig);
+  margin-right: 10%;
 }
 
 .asterisk {
@@ -216,4 +217,67 @@ body,
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+.perspective {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  perspective: 25rem;
+  position: relative;
+}
+
+.perspective-inner {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
+}
+
+.perspective-left {
+  position: absolute;
+  width: 22%;
+  transform: translateY(-50%);
+  transition: 0.1s;
+  top: 50%;
+  left: 30%;
+}
+
+.perspective-right {
+  position: absolute;
+  width: 22%;
+  top: 50%;
+  transform: translate3d(0px, 0px, -10rem) translateY(-50%);
+  transition: 0.1s;
+  right: 30%;
+}
+
+.perspective-right .perspective-desc {
+  text-align: end;
+}
+
+.perspective-inner img {
+  display: inline;
+  width: 100%;
+}
+
+.perspective-inner h2 {
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.perspective-inner span {
+  font-size: 0.5rem;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+
+.third {
+  transform: translate3d(0px, 0px, -20rem) translateY(-50%);
 }
