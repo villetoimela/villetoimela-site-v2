@@ -14,8 +14,7 @@ function Hero() {
         <h2 className="hero-third-text">Web Developer</h2>
         <div className="hero-info-wrapper">
           <p className="hero-info-text">
-            I am a web developer with some experience in creating diverse websites 
-            and web applications using various technologies and programming languages.
+          I am a passionate web developer with some experience in creating diverse websites and web applications using various technologies and programming languages.
           </p>
         </div>
         
