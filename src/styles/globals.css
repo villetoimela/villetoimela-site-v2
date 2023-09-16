@@ -22,6 +22,12 @@ body,
   --asteriskBig: clamp(12rem, 28.9vw, 40rem);
 }
 
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* HERO */
 .hero__header {
   height: 100vh;
@@ -131,14 +137,62 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-top: 2px solid var(--dark-color);
 }
 
-.scroll-section h3 {
-  color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
+.scroll-section,
+h2 {
+  font-size: var(--headlineBig);
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.scroll-section,
+h3 {
+  font-size: var(--headlineSmall);
+  font-weight: 400;
+}
+
+.section-1 {
+  top: 5%;
+  margin-left: 2%;
+  position: absolute;
+}
+
+.section-1 img {
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+.section-2 {
+  top: 60%;
+  position: absolute;
+}
+
+.section-3 {
+  top: 20%;
+  position: absolute;
+}
+
+.section-4 {
+  top: 50%;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .scroll-section,
+  h3 {
+    font-size: var(--headlineSmall);
+    font-weight: 400;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
 }
 
 /* SCROLL SECTION END */
@@ -218,6 +272,8 @@ body,
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+/* PROJECTS PERSPECTIVE THING */
 
 a {
   text-decoration: none;
