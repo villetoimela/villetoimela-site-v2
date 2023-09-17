@@ -155,22 +155,29 @@ h3 {
 }
 
 .section-1 {
-  top: 5%;
+  top: 10%;
   margin-left: 2%;
   position: absolute;
 }
 
 .section-1 img {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   position: absolute;
-  right: 10%;
-  top: 30%;
+  right: 5%;
+  top: 110%;
 }
 
 .section-2 {
   top: 60%;
   position: absolute;
+}
+
+.section-2 img {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: -180%;
 }
 
 .section-3 {
@@ -190,9 +197,24 @@ h3 {
     font-weight: 400;
     width: 50%;
   }
+
+  .section-1 img {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    right: 5%;
+    top: 110%;
+  }
 }
 
 @media (min-width: 1200px) {
+  .section-1 img {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+  }
 }
 
 /* SCROLL SECTION END */
