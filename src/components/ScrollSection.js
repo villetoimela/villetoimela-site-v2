@@ -54,23 +54,24 @@ function ScrollSection() {
           
           <div className="scroll-section ">
             <div className="section-2">
+            <img src="/abstract-bw2.jpg" />
               <h2>Who am i</h2>
-              <h3>Section 1</h3>
-              <img src="/abstract-bw2.jpg" />
+              <h3>Section 1 sasd long established fact that a reader will be distracted by the readable content </h3>
+              
             </div>
           </div>
 
           <div className="scroll-section ">
             <div className="section-3">
               <h2>Who am i</h2>
-              <h3>Section 1</h3>
+              <h3>Section3</h3>
             </div>
           </div>
 
           <div className="scroll-section ">
             <div className="section-4">
               <h2>Who am i</h2>
-              <h3>Section 1</h3>
+              <h3>Section 4</h3>
             </div>
           </div>
 
