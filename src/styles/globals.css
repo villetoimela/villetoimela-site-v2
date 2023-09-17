@@ -169,15 +169,16 @@ h3 {
 }
 
 .section-2 {
-  top: 60%;
-  position: absolute;
+  top: 10%;
+  margin-right: 2%;
+  position: relative;
 }
 
 .section-2 img {
-  width: 500px;
-  height: 400px;
-  position: absolute;
-  top: -180%;
+  width: 400px;
+  height: 300px;
+  top: 20px;
+  position: fixed;
 }
 
 .section-3 {
@@ -214,6 +215,14 @@ h3 {
     position: absolute;
     right: 10%;
     top: 60%;
+  }
+
+  .section-2 img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    right: 10%;
+    top: -180%;
   }
 }
 
