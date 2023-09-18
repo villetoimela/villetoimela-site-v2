@@ -7,6 +7,7 @@ import ScrollSection from '@/components/ScrollSection'
 import Footer from '@/components/Footer'
 import Projects1 from '@/components/Projects1'
 import Projects2 from '@/components/Projects2'
+import TitleSection from '@/components/TitleSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
     <>
     <Hero />
     <ScrollSection />
+    <TitleSection title ="SOME WORDPRESS PROJECTS" />
     <Projects1 />
     <Footer />
     <Projects2 />
