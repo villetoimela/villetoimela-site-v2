@@ -1,19 +1,19 @@
 export const data = [
     {
-        text: "I am a passionate web developer with some experience in creating diverse websites and web applications using various technologies and programming languages.",
-        image: "project-1.jpg",
+        text: "Sleipner.com ",
+        image: "project-sleipner.png",
         class: "perspective-left",
         url: "#",
     },
     {
-        text: "Tää on toka",
-        image: "project-2.jpg",
+        text: "Tammermatic.com",
+        image: "project-tammermatic.png",
         class: "perspective-right",
         url: "#",
     },
     {
-        text: "Tää on kolmas",
-        image: "project-3.jpg",
+        text: "kontukoti.fi",
+        image: "project-kontu.png",
         class: "perspective-left third",
         url: "#",
     },    

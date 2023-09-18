@@ -2,9 +2,11 @@ import React from "react";
 
 function TitleSection(props) {
   return (
-    <footer className="title-section">
+    <div className="title-section">
       <span>{props.title} <img src="/arrow-down.svg" /></span>
-    </footer>
+      <span><a href={props.link}>{props.linkTitle}</a></span>
+    </div>
+    
   );
 }
 
