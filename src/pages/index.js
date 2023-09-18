@@ -18,8 +18,10 @@ export default function Home() {
     <ScrollSection />
     <TitleSection title ="SOME WORDPRESS PROJECTS" />
     <Projects1 />
-    <Footer />
+    <TitleSection title ="SOME REACT PROJECTS" />
     <Projects2 />
+    <TitleSection title ="MORE PROJECTS IN GITHUB" link="https://github.com/villetoimela" linkTitle="> github" />
+    <Footer />
     </>
   )
 }

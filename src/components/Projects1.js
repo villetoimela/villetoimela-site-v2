@@ -52,7 +52,7 @@ function Perspective() {
               <div className="perspective-desc">
                 <h2>{project.text}</h2>
                 <Link href={project.url}>
-                  <span>Discover it</span>
+                  <span>Read more</span>
                 </Link>
               </div>
             </div>

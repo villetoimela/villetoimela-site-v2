@@ -1,20 +1,20 @@
 export const data = [
     {
-        text: "Tää on data 2 eka",
-        image: "project-1.jpg",
+        text: "Kissakahvilan sivusto",
+        image: "project-kissakahvila.png",
         class: "perspective-left",
-        url: "#",
+        url: "https://templates-cat-cafe.netlify.app/",
     },
     {
-        text: "Tää on data 2 toka",
-        image: "project-2.jpg",
+        text: "Tatuointistudion sivusto",
+        image: "project-tatuointistudio.png",
         class: "perspective-right",
-        url: "#",
+        url: "https://tattoo-shop.demo.hiisi.digital/",
     },
     {
-        text: "Tää on data 2 kolmas",
-        image: "project-3.jpg",
+        text: "Parturikampaamon sivusto",
+        image: "project-parturikampaamo.png",
         class: "perspective-left third",
-        url: "#",
+        url: "https://kampaamo.demo.hiisi.digital/",
     },    
 ]

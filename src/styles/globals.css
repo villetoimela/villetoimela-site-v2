@@ -125,14 +125,15 @@ img {
 .title-section {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .title-section span {
   font-size: var(--headlineBig);
   color: var(--primaryTextColor);
   z-index: 1;
+  border-top: 2px solid;
 }
 
 .title-section img {
@@ -478,6 +479,10 @@ a {
   left: 30%;
 }
 
+.perspective-left:last-child {
+  margin-left: 10px;
+}
+
 .perspective-right {
   position: absolute;
   width: 22%;
@@ -506,8 +511,8 @@ a {
   font-size: 0.5rem;
   background-color: var(--white);
   color: var(--black);
-  padding: 0.2rem;
   border-radius: 0.1rem;
+  z-index: 2;
 }
 
 .third {
