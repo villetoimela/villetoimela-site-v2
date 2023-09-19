@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import Projects1 from '@/components/Projects1'
 import Projects2 from '@/components/Projects2'
 import TitleSection from '@/components/TitleSection'
+import InfiniteScroll from '@/components/InfiniteScroll'
 
 const inter = Inter({ subsets: ['latin'] })
 
