@@ -22,7 +22,7 @@ function Perspective() {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "2000 bottom",
+          end: "2500 bottom",
           scrub: 1,
           pin: true,
           snap: 1 / (refs.length),

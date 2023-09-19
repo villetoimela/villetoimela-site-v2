@@ -14,7 +14,7 @@ body,
   --gray-color: #e6e6e6;
   --red-color: #fe330a;
 
-  --headlineBig: clamp(4rem, 12.9vw, 15rem);
+  --headlineBig: clamp(4rem, 13.9vw, 15rem);
   --headlineMediumBig: clamp(5rem, 13.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 1vw, 1.3rem);
@@ -45,6 +45,7 @@ img {
   z-index: 1;
   position: relative;
   border-left: 2px solid var(--dark-color);
+  padding-bottom: 10%;
 }
 
 .hero__header h1 {
@@ -517,4 +518,48 @@ a {
 
 .third {
   transform: translate3d(0px, 0px, -20rem) translateY(-50%);
+}
+
+.infiniteContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  z-index: 10;
+  display: flex;
+  height: auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sliderContainer {
+  white-space: nowrap;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider p {
+  position: relative;
+  margin: 0;
+  color: var(--dark-color);
+  font-size: 50px;
+  font-weight: 500;
+  padding-right: 25px;
+  border-top: 2px solid;
+  text-transform: uppercase;
+}
+
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .slider p {
+    font-size: 100px;
+  }
 }
