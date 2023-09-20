@@ -43,6 +43,15 @@ function ScrollSection() {
       the animation should alway be two separated refs */}
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
+        
+        <svg className="mutkitteleva-viiva" width="600vw" height="auto" viewBox="0 0 4000 100">
+          <path className="path" d="M0,-160 C500,-300 1000,200 1500,-50 C2000,-200 2500,400 3000,-50 C3500,-400 4000,100" fill="none" stroke="var(--red-color)" strokeWidth="5" />
+        </svg>
+
+        <svg className="mutkitteleva-viiva2" width="600vw" height="auto" viewBox="0 0 4000 100">
+          <path className="path" d="M0,130 C500,100 1000,300 1500,100 C2000,-150 2500,0 3000,0 C3500,300 4000,-400" fill="none" stroke="var(--red-color)" strokeWidth="5" />
+        </svg>
+
           <div className="scroll-section first-section">
             <div className="section-1">
               <h2>Who am i</h2>
