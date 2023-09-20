@@ -172,6 +172,22 @@ img {
   position: relative;
 }
 
+.mutkitteleva-viiva {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.mutkitteleva-viiva2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
 .scroll-section {
   height: 100vh;
   width: 100vw;
@@ -562,4 +578,33 @@ a {
   .slider p {
     font-size: 100px;
   }
+}
+
+/* PRELOADER */
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: #141516;
+}
+.introduction svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+.introduction svg path {
+  fill: #141516;
+}
+.introduction p {
+  display: flex;
+  color: #eee9db;
+  font-size: var(--headlineBig);
+  align-items: center;
+  position: absolute;
+  z-index: 1;
 }
