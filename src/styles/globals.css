@@ -598,7 +598,7 @@ a {
   height: calc(100% + 300px);
 }
 .introduction svg path {
-  fill: #141516;
+  fill: var(--dark-color);
 }
 .introduction p {
   display: flex;
