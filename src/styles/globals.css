@@ -258,7 +258,7 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid var(--light-color);
+  border-bottom: 2px solid var(--dark-color);
   padding-bottom: 20px;
 }
 
