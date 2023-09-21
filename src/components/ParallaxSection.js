@@ -26,7 +26,7 @@ const images = [
   "project-tunturiretki.png",
   "project-tammermatic.png",
   "project-tatuointistudio.png",
-  "project-villetoimela.png",
+  "project-elijuomapeli.png",
   "project-sleipner.png",
   "project-kampaamo.png",
 ]
