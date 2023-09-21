@@ -14,7 +14,7 @@ body,
   --gray-color: #e6e6e6;
   --red-color: #fe330a;
 
-  --headlineBig: clamp(4rem, 13.9vw, 15rem);
+  --headlineBig: clamp(4rem, 12.9vw, 15rem);
   --headlineMediumBig: clamp(5rem, 13.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 1vw, 1.3rem);
@@ -128,6 +128,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .title-section span {
@@ -608,3 +609,53 @@ a {
   position: absolute;
   z-index: 1;
 }
+/* END OF PRELOADER */
+
+/* PARALLAX SECTION */
+.parallax-gallery {
+  height: 190vh;
+  background: #2d2d2d;
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.parallax-gallery .column {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.parallax-gallery .column .imageContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.parallax-gallery .column .imageContainer img {
+  object-fit: cover;
+}
+.parallax-gallery .column:nth-of-type(1) {
+  top: -45%;
+}
+.parallax-gallery .column:nth-of-type(2) {
+  top: -95%;
+}
+.parallax-gallery .column:nth-of-type(3) {
+  top: -45%;
+}
+.parallax-gallery .column:nth-of-type(4) {
+  top: -75%;
+}
+.parallax-spacer {
+  height: 0vh;
+}
+
+/* END OF PARALLAX SECTION */
