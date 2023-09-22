@@ -813,3 +813,8 @@ a {
 }
 
 /* END OF NAVIGATION */
+
+button {
+  z-index: 999;
+  position: relative;
+}
