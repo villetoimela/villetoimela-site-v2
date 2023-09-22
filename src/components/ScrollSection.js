@@ -28,6 +28,37 @@ function ScrollSection() {
         },
       }
     );
+
+    const kissaImg = document.querySelector('.kissa-img');
+    gsap.to(kissaImg, {
+      y: -20, // liikuttaa 10px ylös y-akselilla
+      rotation: 3, // kääntää kuvaa 15 astetta
+      duration: 3, // kestää 3 sekuntia
+      repeat: -1, // toista ikuisesti
+      yoyo: true, // vaihda suuntaa joka kerta kun animaatio päättyy
+      ease: "power1.inOut" // sujuva liike
+    });
+  
+    const lappariImg = document.querySelector('.lappari-img');
+    gsap.to(lappariImg, {
+      y: -20, // liikuttaa 10px ylös y-akselilla
+      rotation: 3, // kääntää kuvaa 15 astetta
+      duration: 3, // kestää 3 sekuntia
+      repeat: -1, // toista ikuisesti
+      yoyo: true, // vaihda suuntaa joka kerta kun animaatio päättyy
+      ease: "power1.inOut" 
+    });
+
+    const pilviukkeliImg = document.querySelector('.pilviukkeli-img');
+    gsap.to(pilviukkeliImg, {
+      y: -20, // liikuttaa 10px ylös y-akselilla
+      rotation: 3, // kääntää kuvaa 15 astetta
+      duration: 3, // kestää 3 sekuntia
+      repeat: -1, // toista ikuisesti
+      yoyo: true, // vaihda suuntaa joka kerta kun animaatio päättyy
+      ease: "power1.inOut" // sujuva liike
+    });
+    
     return () => {
       {/* A return function for killing the animation on component unmount */ }
       pin.kill();
@@ -60,14 +91,15 @@ function ScrollSection() {
                 <br/> <br/>
                 I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge.
               </h3>
-              <img src="/kissa-sivulle.svg" />
+              <img src="/kissa-sivulle.svg" className="kissa-img" />
+
             </div>
             
           </div>
           
           <div className="scroll-section second-section">
             <div className="section-2">
-              <img src="/läppäri-sivulle.svg" />
+              <img src="/läppäri-sivulle.svg" className="lappari-img" />
               <h2>What I do</h2>
               <h3>
                 After an intensive two-year Software Developer training, I had the privilege of working at one of Finland's most influential marketing agencies. There, I've been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
@@ -98,7 +130,7 @@ function ScrollSection() {
             <div className="section-4">
               <h2>What next?</h2>
               <h3>All in all, I aim to be a versatile software developer, and I possess a strong passion for embracing new technologies! I plan to continue growing in software development even outside of work, and my ultimate goal is to someday be DA TECH GOD.</h3>
-              <img src="/pilvi-ukkeli-sivulle.svg" />
+              <img src="/pilvi-ukkeli-sivulle.svg" className="pilviukkeli-img" />
             </div>
           </div>
 
