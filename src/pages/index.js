@@ -12,6 +12,7 @@ import TitleSection from '@/components/TitleSection'
 import Preloader from '@/components/Preloader'
 import ParallaxSection from '@/components/ParallaxSection';
 import InfiniteScroll from '@/components/InfiniteScroll';
+import Header from '@/components/Header';
 
 export default function Home() {
 
@@ -48,6 +49,7 @@ export default function Home() {
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
+    <Header />
     <Hero />
     <ScrollSection />
     <TitleSection title ="SOME OF MY PROJECTS" />
