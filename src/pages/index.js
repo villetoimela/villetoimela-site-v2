@@ -16,13 +16,10 @@ import Header from '@/components/Header';
 
 export default function Home() {
 
+  const projects = useRef();
+  const home = useRef();
+
   const [isLoading, setIsLoading] = useState(true);
-
-  const titleSectionRef1 = useRef(); // ref for the first TitleSection
-  const titleSectionRef2 = useRef(); // ref for the second TitleSection
-
-  const scrollToTitleSection1 = () => titleSectionRef1.current.scrollIntoView({ behavior: 'smooth' });
-  const scrollToTitleSection2 = () => titleSectionRef2.current.scrollIntoView({ behavior: 'smooth' });
 
   useEffect( () => {
     (
@@ -55,16 +52,14 @@ export default function Home() {
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
-    <Header />
-    <button onClick={scrollToTitleSection1}>Go to SOME OF MY PROJECTS</button> {/* example button for first TitleSection */}
-    <button onClick={scrollToTitleSection2}>Go to LINK TO GITHUB HERE</button> {/* example button for second TitleSection */}
-    <Hero />
-    <ScrollSection />
-    <TitleSection ref={titleSectionRef1} title ="SOME OF MY PROJECTS" />
-    <ParallaxSection />
-    <TitleSection ref={titleSectionRef2} title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
-    <Footer />
-    
+
+      <Header projects={projects} home={home} />
+      <Hero ref={home} />
+      <ScrollSection />
+      <TitleSection ref={projects} title ="SOME OF MY PROJECTS" />
+      <ParallaxSection />
+      <TitleSection title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
+      <Footer />
     </main>
   )
 }
