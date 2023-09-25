@@ -14,6 +14,7 @@ import ParallaxSection from '@/components/ParallaxSection';
 import InfiniteScroll from '@/components/InfiniteScroll';
 import Header from '@/components/Header';
 import ScrollSectionShort from '@/components/ScrollSectionShort';
+import Technologies from '@/components/Technologies';
 
 export default function Home() {
 
@@ -62,6 +63,7 @@ export default function Home() {
       <TitleSection title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
       <ScrollSectionShort />
       <TitleSection title ="TECH & TOOLS I KNOW" />
+      <Technologies />
       <Footer />
     </main>
   )

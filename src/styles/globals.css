@@ -859,7 +859,7 @@ a {
 /* TECHNOLOGIES */
 .tech-container {
   display: flex;
-  height: 100vh;
+  height: auto;
   align-items: center;
 }
 
@@ -868,11 +868,11 @@ a {
   width: 100%;
 }
 
-.texh-projectContainer div {
+.tech-projectContainer div {
   border-top: 1px solid black;
   cursor: pointer;
   position: relative;
-  margin-bottom: -2vw;
+  margin-bottom: -1vw;
   background-color: white;
 }
 

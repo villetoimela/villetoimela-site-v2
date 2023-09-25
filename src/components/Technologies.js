@@ -36,14 +36,50 @@ const projects = [
     {
       title: "Indianapolis",
       color: "#91F018"
+    },
+    {
+      title: "New York",
+      color: "#F06318"
+    },
+    {
+      title: "San Francisco",
+      color: "#DCF018"
+    },
+    {
+      title: "San Antonio",
+      color: "#18F0E8"
+    },
+    {
+      title: "Nashville",
+      color: "#8C0CF0"
+    },
+    {
+      title: "Houston",
+      color: "#F0183C"
+    },
+    {
+      title: "New Orleans",
+      color: "#F0BA18"
+    },
+    {
+      title: "Oklahoma City",
+      color: "#0C34F0"
+    },
+    {
+      title: "Detroit",
+      color: "#0CBCF0"
+    },
+    {
+      title: "Indianapolis",
+      color: "#91F018"
     }
 ]
 
 
-export default function Home() {
+export default function Technologies() {
 
   const manageMouseEnter = (e, index) => {
-    gsap.to(e.target, {top: "-2vw", backgroundColor: projects[index].color, duration: 0.3})
+    gsap.to(e.target, {top: "-1vw", backgroundColor: projects[index].color, duration: 0.3})
   }
 
   const manageMouseLeave = (e, index) => {
