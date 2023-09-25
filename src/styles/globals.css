@@ -168,7 +168,15 @@ img {
 
 .scroll-section-inner {
   height: 100vh;
-  width: 400vw;
+  width: 300vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.short-scroll-section-inner {
+  height: 100vh;
+  width: 200vw;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -216,6 +224,8 @@ img {
 
 .fourth-section {
   border-left: 2px solid var(--dark-color);
+  border-bottom: 2px solid var(--dark-color);
+  position: relative;
 }
 
 .scroll-section {
@@ -245,11 +255,27 @@ h3 {
   padding-bottom: 20px;
 }
 
+.short-section-1 {
+  top: 10%;
+  margin-left: 2%;
+  position: absolute;
+  border-bottom: 2px solid var(--light-color);
+  padding-bottom: 20px;
+}
+
 .section-1 img {
   width: 400px;
   height: auto;
   position: absolute;
   right: 5%;
+  top: 110%;
+}
+
+.short-section-1 img {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 15%;
   top: 110%;
 }
 
@@ -311,7 +337,7 @@ h3 {
 } */
 
 .section-4 {
-  top: -30%;
+  top: -20%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -341,6 +367,14 @@ h3 {
     position: absolute;
     right: 5%;
     top: 110%;
+  }
+
+  .short-section-1 img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 59%;
+    top: 35%;
   }
 
   .section-2 img {
@@ -373,6 +407,14 @@ h3 {
     position: absolute;
     right: 10%;
     top: 60%;
+  }
+
+  .short-section-1 img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 30%;
+    top: 35%;
   }
 
   .section-2 img {
@@ -814,7 +856,31 @@ a {
 
 /* END OF NAVIGATION */
 
-button {
-  z-index: 999;
-  position: relative;
+/* TECHNOLOGIES */
+.tech-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
+
+.tech-projectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.texh-projectContainer div {
+  border-top: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -2vw;
+  background-color: white;
+}
+
+.tech-projectContainer div p {
+  margin: 0px;
+  font-size: 5vw;
+  padding-left: 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+/* EN OF TECHNOLOGIES */

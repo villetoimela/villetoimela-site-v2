@@ -13,6 +13,7 @@ import Preloader from '@/components/Preloader'
 import ParallaxSection from '@/components/ParallaxSection';
 import InfiniteScroll from '@/components/InfiniteScroll';
 import Header from '@/components/Header';
+import ScrollSectionShort from '@/components/ScrollSectionShort';
 
 export default function Home() {
 
@@ -59,6 +60,8 @@ export default function Home() {
       <TitleSection ref={projects} title ="SOME OF MY PROJECTS" />
       <ParallaxSection />
       <TitleSection title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
+      <ScrollSectionShort />
+      <TitleSection title ="TECH & TOOLS I KNOW" />
       <Footer />
     </main>
   )
