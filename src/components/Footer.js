@@ -26,7 +26,7 @@ function Footer() {
   function handleMouseEnter(e) {
     gsap.fromTo(
       e.currentTarget,
-      { y: 0, color: "white" },
+      { y: 0, color: "" },
       { y: -10, color: "#fe330a", duration: 0.2 }
     );
   }
