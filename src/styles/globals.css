@@ -856,11 +856,10 @@ a {
 }
 
 .tech-projectContainer div {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--dark-color);
   cursor: pointer;
   position: relative;
   margin-bottom: -1vw;
-  background-color: white;
 }
 
 .tech-projectContainer div p {
@@ -927,8 +926,6 @@ a {
   color: var(--light-color);
 }
 
-
-
 .links-container {
   display: flex;
   align-items: center;
@@ -945,6 +942,5 @@ a {
   text-align: center;
   transition: color 0.2s;
 }
-
 
 /* END OF FOOTER */

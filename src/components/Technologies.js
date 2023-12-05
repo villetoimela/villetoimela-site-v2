@@ -99,7 +99,7 @@ export default function Technologies() {
   }
 
   const manageMouseLeave = (e, index) => {
-    gsap.to(e.target, { top: "0", backgroundColor: "white", duration: 0.3, delay: 0.1 })
+    gsap.to(e.target, { top: "0", backgroundColor: "#eee9db", duration: 0.3, delay: 0.1 })
   }
 
   return (
