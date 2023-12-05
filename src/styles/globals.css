@@ -944,3 +944,61 @@ a {
 }
 
 /* END OF FOOTER */
+
+/* START OF TEXTSECTION */
+
+.text-section {
+  border-top: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+  padding: 100px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-section .text-section-body {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Lisätään flex-grow-ominaisuus molemmille osioille */
+.text-section .text-section-body .left-section,
+.text-section .text-section-body .right-section {
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.text-section .text-section-body p {
+  margin: 0px;
+}
+
+.text-section h4 {
+  font-size: 64px;
+  line-height: 70px;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  .text-section .text-section-body {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .text-section {
+    padding: 150px 30px;
+  }
+
+  .text-section h4 {
+    font-size: 90px;
+    line-height: 70px;
+  }
+
+  .text-section .text-section-body p {
+    margin: 0px;
+    font-size: 24px;
+  }
+}
+
+/* END OF TEXTSECTION */

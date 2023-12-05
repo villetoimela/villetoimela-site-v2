@@ -15,6 +15,7 @@ import InfiniteScroll from '@/components/InfiniteScroll';
 import Header from '@/components/Header';
 import ScrollSectionShort from '@/components/ScrollSectionShort';
 import Technologies from '@/components/Technologies';
+import TextSection from '@/components/TextSection';
 
 export default function Home() {
 
@@ -57,11 +58,33 @@ export default function Home() {
 
       <Header projects={projects} home={home} />
       <Hero ref={home} />
-      <ScrollSection />
+      <TextSection 
+        title = "WHO AM I"
+        content ="Hello! I'm a 28-years-old eager Web Developer with about three years of active coding experience. While I've always been intrigued by programming, I officially embarked on my learning journey only three years ago. During this time, I learned many different skills and made some digital ideas real! I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge."
+      />
+      <TextSection
+        title = "WHAT I DO"
+        content ="After an intensive two-year Software Developer training, I had the privilege of working at one of Finland's most influential marketing agencies. There, I've been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
+          During my studies, a fellow student and I co-founded a company. Through this venture, we had the chance to work on several exciting projects! If you're interested, check out <a href='https://www.hiisi.digital/'>hiisi.digital</a>."
+      />
+      <TextSection
+        title = "WHAT I KNOW"
+        content ="For me, it's not just about mastering specific programming languages or technologies; it's about embracing the entirety of web development. I've garnered a wealth of experience across a range of technologies over the years."
+      />
+      <TextSection
+        title = "TECHNOLOGIES AND TOOLS"
+        content ="Over the years, my journey as a web developer has been both vast and fulfilling. I've mastered the art of creating seamless user interfaces using tools like HTML, CSS, JavaScript, and React. Venturing further, PHP, Next.js, TailwindCSS, and WordPress became trusted companions in my toolkit, allowing me to shape visions into digital realities.
+          Of course, I'm accustomed to using version control in my projects, and in addition, I've had a glimpse into the world of databases and servers."
+      />
+      {/* <ScrollSection /> */}
       <TitleSection ref={projects} title ="SOME OF MY PROJECTS" />
       <ParallaxSection />
       <TitleSection title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
-      <ScrollSectionShort />
+      <TextSection 
+        title = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge."
+        content ="The combination of my passion for design, code & interaction positions me in a unique place in the web design world."
+      />
+      {/* <ScrollSectionShort /> */}
       <TitleSection title ="TECH & TOOLS I KNOW" />
       <Technologies />
       <Footer />
