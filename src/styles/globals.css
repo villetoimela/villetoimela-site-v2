@@ -582,6 +582,7 @@ a {
 }
 
 .infiniteContainer {
+  background-color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
