@@ -5,7 +5,7 @@ const Hero = forwardRef((props, ref) => {
   return (
     <>
       <InfiniteScroll />
-      <div className="bg"></div>
+      {/* <div className="bg"></div> */}
 
       <header ref={ref} className="hero__header">
         <h1 className="hero-first-text">VILLE</h1>
