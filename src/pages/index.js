@@ -79,10 +79,15 @@ export default function Home() {
       {/* <ScrollSection /> */}
       <TitleSection ref={projects} title ="SOME OF MY PROJECTS" />
       <ParallaxSection />
-      <TitleSection title ="LINK TO GITHUB HERE" link="https://github.com/villetoimela" linkTitle="> github" />
+      <TitleSection title ="LINK TO GITHUB " link="https://github.com/villetoimela" linkTitle="> github" />
       <TextSection 
-        title = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge."
-        content ="The combination of my passion for design, code & interaction positions me in a unique place in the web design world."
+        title = "SOME MORE ABOUT ME"
+        content ="Hello! I'm a 28-years-old eager Web Developer with about three years of active coding experience. While I've always been intrigued by programming, I officially embarked on my learning journey only three years ago. During this time, I learned many different skills and made some digital ideas real!
+        I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge."
+      />
+      <TextSection 
+        title = "WHATS NEXT?"
+        content ="All in all, I aim to be a versatile software developer, and I possess a strong passion for embracing new technologies! I plan to continue growing in software development even outside of work, and my ultimate goal is to someday be DA TECH GOD."
       />
       {/* <ScrollSectionShort /> */}
       <TitleSection title ="TECH & TOOLS I KNOW" />
