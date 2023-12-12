@@ -17,6 +17,7 @@ import ScrollSectionShort from '@/components/ScrollSectionShort';
 import Technologies from '@/components/Technologies';
 import TextSection from '@/components/TextSection';
 import FloatingGallery from '@/components/FloatingGallery';
+import WorksPeek from '@/components/WorksPeek';
 
 export default function Home() {
 
@@ -68,7 +69,8 @@ export default function Home() {
         content ="After an intensive two-year Software Developer training, I had the privilege of working at one of Finland's most influential marketing agencies. There, I've been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
           During my studies, a fellow student and I co-founded a company. Through this venture, we had the chance to work on several exciting projects! If you're interested, check out <a href='https://www.hiisi.digital/'>hiisi.digital</a>."
       />
-      <FloatingGallery />
+      <WorksPeek />
+      {/* <FloatingGallery /> */}
       <TextSection
         title = "WHAT I KNOW"
         content ="For me, it's not just about mastering specific programming languages or technologies; it's about embracing the entirety of web development. I've garnered a wealth of experience across a range of technologies over the years."
@@ -80,7 +82,7 @@ export default function Home() {
       />
       {/* <ScrollSection /> */}
       <TitleSection ref={projects} title ="SOME OF MY PROJECTS" />
-      <ParallaxSection />
+      {/* <ParallaxSection /> */}
       <TitleSection title ="LINK TO GITHUB " link="https://github.com/villetoimela" linkTitle="> github" />
       <TextSection 
         title = "SOME MORE ABOUT ME"
@@ -95,6 +97,7 @@ export default function Home() {
       <TitleSection title ="TECH & TOOLS I KNOW" />
       <Technologies />
       <Footer />
+      <div class="noise"></div>
     </main>
   )
 }
