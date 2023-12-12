@@ -4,7 +4,7 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Exo 2", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: "Prompt", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -25,6 +25,18 @@ body,
 
 main {
   background-color: var(--light-color);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 100%;
+}
+
+p {
+  font-weight: 200;
 }
 
 a {
@@ -56,7 +68,7 @@ img {
 .hero__header h1 {
   font-size: var(--headlineBig);
   color: var(--dark-color);
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .hero__header .hero-first-text {
@@ -130,14 +142,18 @@ img {
 /* TITLE SECTION */
 .title-section {
   /* height: 100vh; */
-  padding: 150px 30px;
+  padding: 0px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 
-.title-section span {
+.title-section-right {
+  text-align: end;
+}
+
+.title-section h3 {
   font-size: var(--headlineBig);
   color: var(--primaryTextColor);
   z-index: 1;
@@ -184,7 +200,7 @@ img {
 
 .short-scroll-section-inner {
   height: 100vh;
-  width: 200vw;
+  width: 400vw;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -208,13 +224,16 @@ img {
 
 .scroll-section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-top: 2px solid var(--dark-color);
 }
+
+.text-wrapper {
+  padding: 150px 150px;
+}
+
 .first-section {
   border-right: 2px solid var(--dark-color);
   color: #eee9db;
@@ -238,20 +257,19 @@ img {
 
 .scroll-section {
   font-size: var(--headlineBig);
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h2 {
   font-size: var(--headlineBig);
-  text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 200;
   margin-left: 0;
 }
 
 h3 {
   font-size: var(--headlineSmall);
-  font-weight: 400;
-  width: 90%;
+  font-weight: 200;
+  /* width: 90%; */
   margin-left: 0;
 }
 
@@ -366,7 +384,7 @@ h3 {
   h3 {
     font-size: var(--headlineSmall);
     font-weight: 400;
-    width: 50%;
+    font-weight: 200;
   }
 
   .section-1 img {
@@ -586,7 +604,6 @@ a {
 }
 
 .infiniteContainer {
-  background-color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -597,6 +614,8 @@ a {
   margin-bottom: 0;
   overflow: hidden;
   width: 100%;
+  border-top: 2px solid var(--dark-color);
+  border-bottom: 2px solid var(--dark-color);
 }
 
 .sliderContainer {
@@ -612,9 +631,7 @@ a {
   margin: 0;
   color: var(--dark-color);
   font-size: 50px;
-  font-weight: 500;
   padding-right: 25px;
-  border-top: 2px solid;
   text-transform: uppercase;
 }
 
@@ -857,6 +874,16 @@ a {
   display: flex;
   height: auto;
   align-items: center;
+  padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .tech-container {
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-top: 150px;
+  }
 }
 
 .tech-projectContainer {
@@ -866,9 +893,15 @@ a {
 
 .tech-projectContainer div {
   border-top: 1px solid var(--dark-color);
-  cursor: pointer;
   position: relative;
   margin-bottom: -1vw;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .tech-projectContainer div {
+    padding-left: 150px;
+  }
 }
 
 .tech-projectContainer div p {
@@ -877,6 +910,16 @@ a {
   padding-left: 10px;
   text-transform: uppercase;
   pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .tech-projectContainer div p {
+    margin: 0px;
+    font-size: 3.5vw;
+    padding-left: 10px;
+    text-transform: uppercase;
+    pointer-events: none;
+  }
 }
 /* END OF TECHNOLOGIES */
 
@@ -958,8 +1001,8 @@ a {
 /* START OF TEXTSECTION */
 
 .text-section {
-  border-top: 1px solid var(--dark-color);
-  border-bottom: 1px solid var(--dark-color);
+  /* border-top: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color); */
   padding: 150px 30px;
   display: flex;
   justify-content: center;
@@ -979,15 +1022,20 @@ a {
   min-width: 50%;
 }
 
+@media (min-width: 768px) {
+  .text-section .text-section-body .right-section {
+    margin-top: 25%;
+  }
+}
+
 .text-section .text-section-body p {
   margin: 0px;
 }
 
 .text-section h4 {
   font-size: 54px;
-  line-height: 70px;
   padding-bottom: 30px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 @media (min-width: 900px) {
@@ -1001,8 +1049,7 @@ a {
   }
 
   .text-section h4 {
-    font-size: 90px;
-    line-height: 70px;
+    font-size: 110px;
   }
 
   .text-section .text-section-body p {
@@ -1095,6 +1142,8 @@ a {
 
 /* END OF MASK CLIP */
 
+/* START OF NOISE */
+
 .noise::before {
   position: fixed;
   top: 0;
@@ -1108,6 +1157,10 @@ a {
   background: url(/noise.gif);
 }
 
+/* END OF NOISE */
+
+/* START OF WorksPeek */
+
 .section-wrapper {
   min-height: 100vh;
   width: 100vw;
@@ -1115,27 +1168,32 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   z-index: 12;
 }
 
 .works-container {
-  width: 100%; /* Aseta kontainerille leveys */
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  overflow: hidden; /* Lisätty varmistamaan, että ulospäin liikkuvat kuvat eivät näy */
-}
-
-.banner-component {
-  /* Tekstityylit poistetaan, koska luokkaa käytetään kuvan kanssa */
+  overflow: hidden;
 }
 
 .banner-image {
-  height: 400px;
+  height: 230px;
   width: auto;
-  display: block; /* Varmistaa, että kuva ei sisällä ylimääräistä tilaa ympärillä */
+  display: block;
 }
+
+@media (min-width: 768px) {
+  .banner-image {
+    height: 500px;
+    width: auto;
+    display: block;
+  }
+}
+
+/* END OF WorksPeek */

@@ -12,7 +12,7 @@ export default function Index(props) {
             { y: 80, x: -100, opacity: 0, scale: 0.9 }, // Alkutila
             { y: 0, x: 0, opacity: 1, scale: 1,          // Lopputila
               duration: 1.5,
-              ease: "power2.out", // Sujuvampi ja vähemmän pompottava liike
+              ease: "power2.out", 
               scrollTrigger: {
                 trigger: leftSectionRef.current,
                 start: "top bottom",
@@ -27,7 +27,7 @@ export default function Index(props) {
             { y: 80, x: 100, opacity: 0, scale: 0.9 }, // Alkutila
             { y: 0, x: 0, opacity: 1, scale: 1,         // Lopputila
               duration: 1.5,
-              ease: "power2.out", // Sujuvampi ja vähemmän pompottava liike
+              ease: "power2.out",
               scrollTrigger: {
                 trigger: rightSectionRef.current,
                 start: "top bottom",
