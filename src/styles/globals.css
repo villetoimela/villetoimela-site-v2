@@ -23,6 +23,10 @@ body,
   --asteriskBig: clamp(12rem, 28.9vw, 40rem);
 }
 
+main {
+  background-color: var(--light-color);
+}
+
 a {
   color: var(--red-color);
 }
@@ -1090,3 +1094,48 @@ a {
 }
 
 /* END OF MASK CLIP */
+
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.1;
+  z-index: 99;
+  pointer-events: none;
+  background: url(/noise.gif);
+}
+
+.section-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 12;
+}
+
+.works-container {
+  width: 100%; /* Aseta kontainerille leveys */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden; /* Lisätty varmistamaan, että ulospäin liikkuvat kuvat eivät näy */
+}
+
+.banner-component {
+  /* Tekstityylit poistetaan, koska luokkaa käytetään kuvan kanssa */
+}
+
+.banner-image {
+  height: 400px;
+  width: auto;
+  display: block; /* Varmistaa, että kuva ei sisällä ylimääräistä tilaa ympärillä */
+}
