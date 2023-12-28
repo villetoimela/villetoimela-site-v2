@@ -26,13 +26,13 @@ function Footer() {
   function handleMouseEnter(e) {
     gsap.fromTo(
       e.currentTarget,
-      { y: 0, color: "" },
-      { y: -10, color: "#fe330a", duration: 0.2 }
+      { y: 0, color: "#eee9db" },
+      { y: -3, color: "#fe330a", duration: 0.2 }
     );
   }
 
   function handleMouseLeave(e) {
-    gsap.to(e.currentTarget, { y: 0, color: "white", duration: 0.2 });
+    gsap.to(e.currentTarget, { y: 0, color: "#eee9db", duration: 0.2 });
   }
 
   return (
@@ -42,12 +42,15 @@ function Footer() {
         <div ref={imageDivSecond} className="image-div image-div-second"><img src="/oikea-käsi-sivulle.svg" alt="Kuva 2" /></div>
       </div>
       <div className="contact-div">
-        <span>LETS CONTACT</span>
+        <span>Lets work together</span>
       </div>
       <div className="links-container">
-        <a href="#whatsapp-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>WHATSAPP</a>
-        <a href="#linkedin-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>LINKEDIN</a>
-        <a href="#github-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>GITHUB</a>
+        <a href="#whatsapp-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Whatsapp</a>
+        <a href="#linkedin-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>LinkedIn</a>
+        <a href="#github-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Github</a>
+      </div>
+      <div className="copyright">
+        <p>© Ville Toimela - 2024</p>
       </div>
     </footer>
   );
