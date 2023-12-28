@@ -18,6 +18,7 @@ import Technologies from '@/components/Technologies';
 import TextSection from '@/components/TextSection';
 import FloatingGallery from '@/components/FloatingGallery';
 import WorksPeek from '@/components/WorksPeek';
+import ProjectGallery from '@/components/ProjectGallery';
 
 export default function Home() {
 
@@ -82,6 +83,7 @@ export default function Home() {
         content ="Over the years, my journey as a web developer has been both vast and fulfilling. I've mastered the art of creating seamless user interfaces using tools like HTML, CSS, JavaScript, and React. Venturing further, PHP, Next.js, TailwindCSS, and WordPress became trusted companions in my toolkit, allowing me to shape visions into digital realities.
           Of course, I'm accustomed to using version control in my projects, and in addition, I've had a glimpse into the world of databases and servers."
       />
+      <ProjectGallery />
       {/* <ScrollSection /> */}
       {/* <ParallaxSection /> */}
       {/* <ScrollSectionShort /> */}
