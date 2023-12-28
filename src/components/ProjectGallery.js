@@ -1,6 +1,6 @@
 import Project from '../components/project';
 
-export default function Home() {
+export default function ProjectGallery() {
 
   const projects = [
     {
@@ -34,12 +34,10 @@ export default function Home() {
     <main className="galleryMain">
       <div className="gallery">
         <p>Featured Work</p>
-          {
-            projects.map( project => {
-              return <Project project={project}/>
-            })
-          }
+        {projects.map((project, index) => {
+          return <Project key={index} project={project}/>
+        })}
       </div>
     </main>
-  )
+  );
 }
