@@ -88,7 +88,7 @@ export default function Home() {
       <TitleSection title ="Tech & tools i have been using lately" />
       <Technologies />
       <Footer />
-      <div class="noise"></div>
+      <div className="noise"></div>
     </main>
   )
 }
