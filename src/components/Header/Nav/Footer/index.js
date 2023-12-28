@@ -1,10 +1,10 @@
 export default function index() {
   return (
     <div className="nav-footer">
-        <a href="#">Awwwards</a>
-        <a href="#">Instagram</a>
-        <a href="#">Dribble</a>
+        <a href="#">WhatsApp</a>
         <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+        <a href="#">Instagram</a>
     </div>
   )
 }
