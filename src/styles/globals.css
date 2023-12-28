@@ -142,7 +142,7 @@ img {
 /* TITLE SECTION */
 .title-section {
   /* height: 100vh; */
-  padding: 0px 30px;
+  padding: 3rem 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1180,6 +1180,7 @@ a {
   align-items: center;
   gap: 40px;
   overflow: hidden;
+  padding: 3rem;
 }
 
 .banner-image {
