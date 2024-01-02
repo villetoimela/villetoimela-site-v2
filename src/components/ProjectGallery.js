@@ -35,7 +35,7 @@ export default function ProjectGallery() {
       <div className="gallery">
         <p>Featured Work</p>
         {projects.map((project, index) => {
-          return <Project key={index} project={project}/>
+          return <Project key={index} project={project} index={index} />
         })}
       </div>
     </main>
