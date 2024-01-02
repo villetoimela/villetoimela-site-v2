@@ -9,12 +9,13 @@ const TitleSection = ({ title, link, linkTitle, textAlignRight }) => {
 
   useEffect(() => {
     gsap.fromTo(sectionRef.current, 
-      { x: 300, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1.5, ease: "power2.inOut",
+      { y: 80, x: 200, opacity: 0, scale: 0.9 }, // Alkutila
+      { y: 0, x: 0, opacity: 1, scale: 1,         // Lopputila
+        duration: 1.5,
+        ease: "power2.out", 
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top bottom",
-          end: "top top",
           scrub: 1,
         }
       }
