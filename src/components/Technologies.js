@@ -1,4 +1,8 @@
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
@@ -91,8 +95,22 @@ const projects = [
   },
 ]
 
-
 export default function Technologies() {
+  const containerRefs = useRef([]);
+
+  useEffect(() => {
+    containerRefs.current.forEach((el, index) => {      
+      gsap.fromTo(el, 
+        { x: -75, opacity: 0 }, 
+        { x: 0, opacity: 1, duration: 0.5, ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top bottom+=100", // Aloituspiste skrollauksessa
+            scrub: true
+          } 
+        });
+    });
+  }, []);
 
   const manageMouseEnter = (e, index) => {
     gsap.to(e.target, { top: "-1vw", backgroundColor: projects[index].color, duration: 0.3 })
@@ -107,9 +125,16 @@ export default function Technologies() {
       <div className="tech-projectContainer">
         {
           projects.map((project, index) => {
-            return <div onMouseEnter={(e) => { manageMouseEnter(e, index) }} onMouseLeave={(e) => { manageMouseLeave(e, index) }} key={index}>
-              <p>{project.title}</p>
-            </div>
+            return (
+              <div 
+                onMouseEnter={(e) => manageMouseEnter(e, index)} 
+                onMouseLeave={(e) => manageMouseLeave(e, index)} 
+                ref={el => containerRefs.current[index] = el} 
+                key={index}
+              >
+                <p>{project.title}</p>
+              </div>
+            )
           })
         }
       </div>
