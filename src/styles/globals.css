@@ -1205,7 +1205,13 @@ a {
   align-items: center;
   gap: 40px;
   overflow: hidden;
-  padding: 3rem;
+  padding: 150px;
+}
+
+@media (min-width: 768px) {
+  .works-container {
+    padding: 150px;
+  }
 }
 
 .banner-image {
@@ -1259,11 +1265,17 @@ a {
   width: 10vw;
 }
 
-.gaalleryMain {
-  height: 100vh;
+.galleryMain {
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .galleryMain {
+    padding: 150px;
+  }
 }
 
 .gallery {
