@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, forwardRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
   const imageDivFirst = useRef(null);
   const imageDivSecond = useRef(null);
 
@@ -36,7 +36,7 @@ function Footer() {
   }
 
   return (
-    <footer className="footer">
+    <footer ref={ref} className="footer">
       <div className="image-container">
         <div ref={imageDivFirst} className="image-div image-div-first"><img src="/vasen-käsi-sivulle.svg" alt="Kuva 1" /></div>
         <div ref={imageDivSecond} className="image-div image-div-second"><img src="/oikea-käsi-sivulle.svg" alt="Kuva 2" /></div>
@@ -54,6 +54,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+});
 
 export default Footer;

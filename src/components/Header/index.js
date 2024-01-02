@@ -1,9 +1,11 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { forwardRef, useEffect, useState } from 'react';
 import Nav from './nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
-const Header = forwardRef(({ projects, home }, ref) => {
+const Header = forwardRef(({ projects, home, contact, textsection }, ref) => {
 
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
@@ -22,7 +24,7 @@ const Header = forwardRef(({ projects, home }, ref) => {
         </div>
       </div>
       <AnimatePresence mode="wait">
-        {isActive && <Nav projects={projects} home={home} />}
+        {isActive && <Nav projects={projects} home={home} contact={contact} textsection={textsection} />}
       </AnimatePresence>
     </>
   );
