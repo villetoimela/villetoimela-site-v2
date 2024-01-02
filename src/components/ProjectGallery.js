@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React, { forwardRef } from "react";
 import Project from '../components/project';
 
@@ -9,24 +10,34 @@ const ProjectGallery = forwardRef((props, ref) => {
       src: "project-magister.png"
     },
     {
-      title1: "La",
-      title2: "Grange",
-      src: "la_grange.jpeg"
+      title1: "Kyocera",
+      title2: "Technologies",
+      src: "project-kyocera.png"
     },
     {
-      title1: "Deux Huit",
-      title2: "Huit",
-      src: "deux_huit_huit.jpeg"
+      title1: "Roihu",
+      title2: "Law",
+      src: "project-roihu.png"
     },
     {
-      title1: "Nothing",
-      title2: "Design Studio",
-      src: "nothing_design_studio.png"
+      title1: "Tammermatic",
+      title2: "",
+      src: "project-tammermatic.png"
     },
     {
-      title1: "Mambo",
-      title2: "Mambo",
-      src: "mambo_mambo.jpeg"
+      title1: "Kontukoti",
+      title2: "",
+      src: "project-kontu.png"
+    },
+    {
+      title1: "Sleipner",
+      title2: "",
+      src: "project-sleipner.png"
+    },
+    {
+      title1: "Sisuline",
+      title2: "",
+      src: "project-sisuline.png"
     },
   ];
 
