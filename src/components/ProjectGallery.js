@@ -1,7 +1,7 @@
+import React, { forwardRef } from "react";
 import Project from '../components/project';
 
-export default function ProjectGallery() {
-
+const ProjectGallery = forwardRef((props, ref) => {
   const projects = [
     {
       title1: "Magister",
@@ -28,16 +28,18 @@ export default function ProjectGallery() {
       title2: "Mambo",
       src: "mambo_mambo.jpeg"
     },
-  ]
+  ];
 
   return (
-    <main className="galleryMain">
+    <main ref={ref} className="galleryMain">
       <div className="gallery">
-        <p>Featured Work</p>
+        {/* <p class="section-title">Featured Work</p> */}
         {projects.map((project, index) => {
           return <Project key={index} project={project} index={index} />
         })}
       </div>
     </main>
   );
-}
+});
+
+export default ProjectGallery;

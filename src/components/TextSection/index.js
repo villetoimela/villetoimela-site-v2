@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable react/display-name */
+import React, { useEffect, useRef, forwardRef } from 'react';
 import { gsap } from 'gsap';
 
-export default function Index(props) {
+const Index = forwardRef((props, ref) => {
     const { title, content, swap } = props;
     const leftSectionRef = useRef(null);
     const rightSectionRef = useRef(null);
@@ -59,11 +60,13 @@ export default function Index(props) {
     );
 
     return (
-        <div className="text-section">
+        <div ref={ref} className="text-section">
             <div className="text-section-body">
                 {leftSection}
                 {rightSection}
             </div>
         </div>
     );
-}
+});
+
+export default Index;

@@ -6,12 +6,15 @@ import Link from './Link';
 import Curve from './Curve';
 import Footer from './Footer';
 
-export default function Nav({ projects, home }) {
+export default function Nav({ projects, home, contact, textsection }) {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   const scrollToProjects = () => projects.current?.scrollIntoView({ behavior: 'smooth' });
   const scrollToHome = () => home.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToContact = () => contact.current?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToTextsection = () => textsection.current?.scrollIntoView({ behavior: 'smooth' });
+  
 
   const navItems = [
     {
@@ -20,18 +23,19 @@ export default function Nav({ projects, home }) {
       onClick: scrollToHome,
     },
     {
+      title: "About me",
+      href: "#",
+      onClick: scrollToTextsection,
+    },
+    {
       title: "Work",
       href: "#",
       onClick: scrollToProjects,
     },
     {
-      title: "About",
-      href: "#",
-      
-    },
-    {
       title: "Contact",
       href: "#",
+      onClick: scrollToContact,
     },
   ];
 
