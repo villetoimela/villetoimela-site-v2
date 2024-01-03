@@ -57,7 +57,7 @@ const Banner = () => {
         <img ref={banner1Ref} src="/project-roihu.png" alt="Banner 1" className="banner-image" />
         <img ref={banner2Ref} src="/project-kissakahvila.png" alt="Banner 2" className="banner-image" />
         <img ref={banner3Ref} src="/project-magister.png" alt="Banner 3" className="banner-image" />
-        <img ref={banner4Ref} src="/project-kyocera.png" alt="Banner 4" className="banner-image" />
+        <img ref={banner4Ref} src="/project-tammermatic.png" alt="Banner 4" className="banner-image" />
       </div>
     </section>
   );

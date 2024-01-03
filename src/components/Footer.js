@@ -1,3 +1,5 @@
+/* eslint-disable react/display-name */
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef, forwardRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -45,9 +47,10 @@ const Footer = forwardRef((props, ref) => {
         <span>Lets work together</span>
       </div>
       <div className="links-container">
-        <a href="#whatsapp-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Whatsapp</a>
-        <a href="#linkedin-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>LinkedIn</a>
-        <a href="#github-link" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Github</a>
+        <a href="tel:0405137883" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Phone</a>
+        <a href="https://wa.me/358405137883" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Whatsapp</a>
+        <a href="https://www.linkedin.com/in/villetoimela/" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>LinkedIn</a>
+        <a href="https://github.com/villetoimela" className="social-link" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Github</a>
       </div>
       <div className="copyright">
         <p>© Ville Toimela - 2024</p>
