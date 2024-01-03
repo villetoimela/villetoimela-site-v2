@@ -22,7 +22,7 @@ const images = [
   "project-elijuomapeli.png",
   "project-villetoimela.png",
   "project-kampaamo.png",
-  "project-kontu.png",
+  "project-kyocera.png",
   "project-tunturiretki.png",
   "project-tammermatic.png",
   "project-tatuointistudio.png",
@@ -43,9 +43,9 @@ export default function ParallaxSection() {
 
   const { height } = dimension;
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.6])
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.2])
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.6])
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5])
 
   useEffect(() => {
     const resize = () => {

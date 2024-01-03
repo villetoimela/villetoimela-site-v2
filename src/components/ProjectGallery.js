@@ -39,6 +39,41 @@ const ProjectGallery = forwardRef((props, ref) => {
       title2: "",
       src: "project-sisuline.png"
     },
+    {
+      title1: "Hiisi",
+      title2: "Digital",
+      src: "project-hiisi.png"
+    },
+    {
+      title1: "Jalkahoitola",
+      title2: "tunturiretki",
+      src: "project-tunturiretki.png"
+    },
+    {
+      title1: "Kissakahvila",
+      title2: "",
+      src: "project-kissakahvila.png"
+    },
+    {
+      title1: "villetoimela",
+      title2: "portfolio",
+      src: "project-villetoimela.png"
+    },
+    {
+      title1: "Parturi",
+      title2: "kampaamo",
+      src: "project-kampaamo.png"
+    },
+    {
+      title1: "Juomapeli",
+      title2: "",
+      src: "project-elijuomapeli.png"
+    },
+    {
+      title1: "Hiisi",
+      title2: "Tattoo",
+      src: "project-tattoo.png"
+    },
   ];
 
   return (

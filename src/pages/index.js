@@ -75,7 +75,6 @@ export default function Home() {
       <TitleSection title ="Sneak peek to some of my projects" />
       <WorksPeek />
       <TitleSection textAlignRight={true} title ="Link to " link="https://github.com/villetoimela" linkTitle="> github" />
-      {/* <FloatingGallery /> */}
       <TextSection
         title = "What i know"
         content ="For me, it's not just about mastering specific programming languages or technologies; it's about embracing the entirety of web development. I've garnered a wealth of experience across a range of technologies over the years."
@@ -87,6 +86,8 @@ export default function Home() {
       />
       <TitleSection href="work" title ="Some of my latest works" />
       <ProjectGallery ref={projects} />
+      {/* <Projects1 /> */}
+      {/* <FloatingGallery /> */}
       {/* <ScrollSection /> */}
       {/* <ParallaxSection /> */}
       {/* <ScrollSectionShort /> */}
