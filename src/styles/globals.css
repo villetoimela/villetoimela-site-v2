@@ -1221,7 +1221,7 @@ a {
 
 @media (min-width: 768px) {
   .banner-image {
-    height: 500px;
+    height: 600px;
     width: auto;
     display: block;
   }
