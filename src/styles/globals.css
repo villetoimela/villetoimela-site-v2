@@ -97,6 +97,15 @@ img {
   color: var(--red-color);
 }
 
+.hero__header .first-text {
+  letter-spacing: 5px;
+  font-size: var(--headlineSmall);
+  width: 100%;
+  /* color: #000; */
+  text-align: start;
+  padding-left: 5px;
+}
+
 .hero__header .hero-info-wrapper {
   display: flex;
   width: 100%;
