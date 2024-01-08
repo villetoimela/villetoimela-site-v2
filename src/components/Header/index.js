@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { forwardRef, useEffect, useState } from 'react';
-import Nav from './nav';
+import Nav from './Nav';
 import { AnimatePresence } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
