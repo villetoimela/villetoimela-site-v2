@@ -22,4 +22,6 @@ const Hero = forwardRef((props, ref) => {
   );
 });
 
+Hero.displayName = 'Hero'; 
+
 export default Hero;

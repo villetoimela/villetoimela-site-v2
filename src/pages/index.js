@@ -71,10 +71,10 @@ export default function Home() {
         title = "What i do"
         content={
           <>
-            After an intensive two-year Software Developer training, I had the privilege of working at one of Finland's most influential marketing agencies. There, I've been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
+            After an intensive two-year Software Developer training, I had the privilege of working at one of Finland&apos;s most influential marketing agencies. There, I&apos;ve been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
             <br />
             <br />
-            During my studies, my brother and I co-founded a company. Through this venture, we had the chance to work on several exciting projects! If you're interested, check out <a href="https://www.hiisi.digital/" target="_blank" rel="noopener noreferrer">hiisi.digital</a>.
+            During my studies, my brother and I co-founded a company. Through this venture, we had the chance to work on several exciting projects! If you&apos;re interested, check out <a href="https://www.hiisi.digital/" target="_blank" rel="noopener noreferrer">hiisi.digital</a>.
           </>
         }
         />
