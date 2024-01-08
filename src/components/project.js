@@ -1,8 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useState } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +12,7 @@ const anim = {
 };
 
 export default function Index({ project, index }) {
-    const { title1, title2, src } = project;
+    const { title1, title2, src, href } = project; // Lisätty href
     const [isActive, setIsActive] = useState(false);
     const containerRef = useRef(null);
 
@@ -25,20 +24,22 @@ export default function Index({ project, index }) {
             { x: 0, opacity: 1, duration: 0.5, ease: "power2.out", 
               scrollTrigger: {
                 trigger: containerRef.current,
-                start: "center 90%", // Animoinnin aloituskohta
-                end: "center 20%", // Animoinnin loppumiskohta
+                start: "center 90%",
+                end: "center 20%",
                 scrub: true
               } 
             });
     }, [index]);
 
     return (
-        <div ref={containerRef} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)} className="project">
-            <p>{title1}</p>
-            <motion.div variants={anim} animate={isActive ? "open" : "closed"} className="imgContainer">
-                <img src={src} alt="" />
-            </motion.div>
-            <p>{title2}</p>
-        </div>
+        <a href={href} target="_blank" rel="noopener noreferrer" className="projectLink"> {/* Kääritty a-elementtiin */}
+          <div ref={containerRef} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)} className="project">
+              <p>{title1}</p>
+              <motion.div variants={anim} animate={isActive ? "open" : "closed"} className="imgContainer">
+                  <img src={src} alt={`${title1} ${title2}`} />
+              </motion.div>
+              <p>{title2}</p>
+          </div>
+        </a>
     );
 }
