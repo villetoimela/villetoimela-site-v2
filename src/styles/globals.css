@@ -1231,7 +1231,7 @@ a {
 
 /* START OF Project gallery */
 .project {
-  border-top: 2px solid black;
+  /* border-top: 2px solid black; */
   padding-top: 0.8vw;
   padding-bottom: 0.8vw;
   cursor: pointer;
@@ -1283,3 +1283,7 @@ a {
   margin: auto;
 }
 /* END OF Project gallery */
+
+.projectLink {
+  color: var(--dark-color);
+}
