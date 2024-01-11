@@ -97,6 +97,7 @@ const ProjectGallery = forwardRef((props, ref) => {
         {projects.map((project, index) => {
           return <Project key={index} project={project} index={index} />
         })}
+        <p class="section-title">Deleted some of my works for now, ensuring that the projects can be displayed here.</p>
       </div>
     </main>
   );
