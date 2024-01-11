@@ -93,6 +93,7 @@ export default function Home() {
       <TitleSection href="work" title ="Some of my latest works" />
       <ProjectGallery ref={projects} />
       {/* <Projects1 /> */}
+      {/* <Projects2 /> */}
       {/* <FloatingGallery /> */}
       {/* <ScrollSection /> */}
       {/* <ParallaxSection /> */}
