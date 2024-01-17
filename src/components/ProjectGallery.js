@@ -28,12 +28,12 @@ const ProjectGallery = forwardRef((props, ref) => {
     //   src: "project-tammermatic.png",
     //   href: "https://tammermatic.com/"
     // },
-    // {
-    //   title1: "Kontukoti",
-    //   title2: "",
-    //   src: "project-kontu.png",
-    //   href: "https://kontukoti.fi/"
-    // },
+    {
+      title1: "Kontukoti",
+      title2: "",
+      src: "project-kontu.png",
+      href: "https://kontukoti.fi/"
+    },
     // {
     //   title1: "Sleipner",
     //   title2: "",
