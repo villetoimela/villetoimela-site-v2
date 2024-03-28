@@ -25,7 +25,7 @@ body,
 
 main {
   background-color: var(--light-color);
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 h1,
@@ -910,12 +910,6 @@ a {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .tech-projectContainer div {
-    /* padding-left: 150px; */
-  }
-}
-
 .tech-projectContainer div p {
   margin: 0px;
   font-size: 7vw;
@@ -1275,6 +1269,7 @@ a {
 
 .galleryMain {
   /* height: 100vh; */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1296,3 +1291,86 @@ a {
 .projectLink {
   color: var(--dark-color);
 }
+
+/* START OF ZoomParallax */
+
+.containerZoomParallax {
+  height: 300vh;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .sticky {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+
+    .el {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .imageContainer {
+        position: relative;
+        width: 25vw;
+        height: 25vh;
+        img {
+          object-fit: cover;
+        }
+      }
+      &:nth-of-type(2) {
+        .imageContainer {
+          top: -30vh;
+          left: 5vw;
+          width: 35vw;
+          height: 30vh;
+        }
+      }
+      &:nth-of-type(3) {
+        .imageContainer {
+          top: -10vh;
+          left: -25vw;
+          width: 20vw;
+          height: 45vh;
+        }
+      }
+      &:nth-of-type(4) {
+        .imageContainer {
+          left: 27.5vw;
+          width: 25vw;
+          height: 25vh;
+        }
+      }
+      &:nth-of-type(5) {
+        .imageContainer {
+          top: 27.5vh;
+          left: 5vw;
+          width: 20vw;
+          height: 25vh;
+        }
+      }
+      &:nth-of-type(6) {
+        .imageContainer {
+          top: 27.5vh;
+          left: -22.5vw;
+          width: 30vw;
+          height: 25vh;
+        }
+      }
+      &:nth-of-type(7) {
+        .imageContainer {
+          top: 22.5vh;
+          left: 25vw;
+          width: 15vw;
+          height: 15vh;
+        }
+      }
+    }
+  }
+}
+
+/* END OF ZoomParallax */
