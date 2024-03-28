@@ -12,7 +12,7 @@ const Banner = () => {
 
   useEffect(() => {
     const xOffset = 50;
-  
+
     gsap.timeline({
       scrollTrigger: {
         trigger: ".works-container",
@@ -21,16 +21,16 @@ const Banner = () => {
         scrub: true
       }
     })
-    .fromTo(banner1Ref.current, 
-      { x: xOffset + 'vw', autoAlpha: 1 }, 
-      { x: -xOffset + 'vw', autoAlpha: 1, ease: "none" }
-    )
-    .fromTo(banner3Ref.current, 
-      { x: xOffset + 'vw', autoAlpha: 1 }, 
-      { x: -xOffset + 'vw', autoAlpha: 1, ease: "none" },
-      "<" 
-    );
-  
+      .fromTo(banner1Ref.current,
+        { x: xOffset + 'vw', autoAlpha: 1 },
+        { x: -xOffset + 'vw', autoAlpha: 1, ease: "none" }
+      )
+      .fromTo(banner3Ref.current,
+        { x: xOffset + 'vw', autoAlpha: 1 },
+        { x: -xOffset + 'vw', autoAlpha: 1, ease: "none" },
+        "<"
+      );
+
     gsap.timeline({
       scrollTrigger: {
         trigger: ".works-container",
@@ -39,25 +39,25 @@ const Banner = () => {
         scrub: true
       }
     })
-    .fromTo(banner2Ref.current, 
-      { x: -xOffset + 'vw', autoAlpha: 1 }, 
-      { x: xOffset + 'vw', autoAlpha: 1, ease: "none" }
-    )
-    .fromTo(banner4Ref.current, 
-      { x: -xOffset + 'vw', autoAlpha: 1 }, 
-      { x: xOffset + 'vw', autoAlpha: 1, ease: "none" },
-      "<"
-    );
+      .fromTo(banner2Ref.current,
+        { x: -xOffset + 'vw', autoAlpha: 1 },
+        { x: xOffset + 'vw', autoAlpha: 1, ease: "none" }
+      )
+      .fromTo(banner4Ref.current,
+        { x: -xOffset + 'vw', autoAlpha: 1 },
+        { x: xOffset + 'vw', autoAlpha: 1, ease: "none" },
+        "<"
+      );
   }, []);
-  
+
 
   return (
     <section className="section-wrapper">
       <div className="works-container">
-        <img ref={banner1Ref} src="/project-tattoo.png" alt="Banner 1" className="banner-image" />
+        <img ref={banner1Ref} src="/project-roihu.png" alt="Banner 1" className="banner-image" />
         <img ref={banner2Ref} src="/project-kissakahvila.png" alt="Banner 2" className="banner-image" />
-        <img ref={banner3Ref} src="/project-kampaamo.png" alt="Banner 3" className="banner-image" />
-        <img ref={banner4Ref} src="/project-hiisi.png" alt="Banner 4" className="banner-image" />
+        <img ref={banner3Ref} src="/project-magister.png" alt="Banner 3" className="banner-image" />
+        <img ref={banner4Ref} src="/project-tammermatic.png" alt="Banner 4" className="banner-image" />
       </div>
     </section>
   );
