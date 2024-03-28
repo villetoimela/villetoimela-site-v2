@@ -64,7 +64,7 @@ export default function Home() {
 
       <Header projects={projects} home={home} contact={contact} textsection={textsection} />
       <Hero ref={home} />
-      <ZoomParallax />
+
       <TextSection ref={textsection}
         title="Who am i"
         content="Hello! I'm a 28-years-old eager Web Developer with about four years of active coding experience. While I've always been intrigued by programming, I officially embarked on my learning journey only four years ago. During this time, I learned many different skills and made some digital ideas real! I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge."
@@ -80,9 +80,9 @@ export default function Home() {
           </>
         }
       />
-      {/* <TitleSection title ="Sneak peek to some of my projects" /> */}
+      <TitleSection title="Sneak peek to some of my projects" />
       <WorksPeek />
-      {/* <TitleSection textAlignRight={true} title ="Link to " link="https://github.com/villetoimela" linkTitle="> github" /> */}
+      <TitleSection textAlignRight={true} title="Link to " link="https://github.com/villetoimela" linkTitle="> github" />
       <TextSection
         title="What i know"
         content="For me, it's not just about mastering specific programming languages or technologies; it's about embracing the entirety of web development. I've garnered a wealth of experience across a range of technologies over the years."
@@ -92,7 +92,8 @@ export default function Home() {
         content="Over the years, my journey as a web developer has been both vast and fulfilling. I've mastered the art of creating seamless user interfaces using tools like HTML, CSS, JavaScript, and React. Venturing further, PHP, Next.js, TailwindCSS, and WordPress became trusted companions in my toolkit, allowing me to shape visions into digital realities.
           Of course, I'm accustomed to using version control in my projects, and in addition, I've had a glimpse into the world of databases and servers."
       />
-      {/* <TitleSection href="work" title ="Some of my latest works" /> */}
+      <ZoomParallax />
+      <TitleSection href="work" title="Some of my latest works" />
       <ProjectGallery ref={projects} />
       {/* <Projects1 /> */}
       {/* <Projects2 /> */}
