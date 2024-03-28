@@ -1,10 +1,10 @@
-import Picture1 from '../../public/images/1.jpeg';
-import Picture2 from '../../public/images/2.jpeg';
-import Picture3 from '../../public/images/3.jpg';
-import Picture4 from '../../public/images/4.jpg';
-import Picture5 from '../../public/images/5.jpg';
-import Picture6 from '../../public/images/6.jpg';
-import Picture7 from '../../public/images/7.jpeg';
+import Picture1 from '../../public/images/ai-kissa10.webp';
+import Picture2 from '../../public/images/ai-kissa9.webp';
+import Picture3 from '../../public/images/ai-kissa7.webp';
+import Picture4 from '../../public/images/ai-kissa5.webp';
+import Picture5 from '../../public/images/ai-kissa2.webp';
+import Picture6 from '../../public/images/ai-kissa3.webp';
+import Picture7 from '../../public/images/ai-kissa8.webp';
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
