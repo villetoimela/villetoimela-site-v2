@@ -55,16 +55,16 @@ const Banner = () => {
     <section className="section-wrapper">
       <div className="works-container">
         <div ref={banner1Ref} className="banner-image">
-          <Image src="/project-roihu.png" alt="Banner 1" layout="fill" objectFit="contain" priority={true} />
+          <Image src="/project-roihu.png" alt="Banner image 1" layout="fill" objectFit="contain" priority={true} />
         </div>
         <div ref={banner2Ref} className="banner-image">
-          <Image src="/project-kissakahvila.png" alt="Banner 2" layout="fill" objectFit="contain" priority={true} />
+          <Image src="/project-kissakahvila.png" alt="Banner image 2" layout="fill" objectFit="contain" priority={true} />
         </div>
         <div ref={banner3Ref} className="banner-image">
-          <Image src="/project-magister.png" alt="Banner 3" layout="fill" objectFit="contain" priority={true} />
+          <Image src="/project-magister.png" alt="Banner image 3" layout="fill" objectFit="contain" priority={true} />
         </div>
         <div ref={banner4Ref} className="banner-image">
-          <Image src="/project-tammermatic.png" alt="Banner 4" layout="fill" objectFit="contain" priority={true} />
+          <Image src="/project-tammermatic.png" alt="Banner image 4" layout="fill" objectFit="contain" priority={true} />
         </div>
       </div>
     </section>

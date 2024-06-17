@@ -42,7 +42,7 @@ export default function Index({ project, index }) {
                 <motion.div variants={anim} animate={isActive ? "open" : "closed"} className="imgContainer">
                     <Image
                         src={imageSrc}
-                        alt={`${title1} ${title2}`}
+                        alt={`Image related to ${title1}`}
                         layout="responsive"
                         width={200}
                         height={100}

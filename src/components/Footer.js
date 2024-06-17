@@ -43,7 +43,7 @@ const Footer = forwardRef((props, ref) => {
         <div ref={imageDivFirst} className="image-div image-div-first">
           <Image
             src="/vasen-käsi-sivulle.svg"
-            alt="Kuva 1"
+            alt="Left pointing finger image"
             layout="responsive"
             width={500}
             height={500}
@@ -53,7 +53,7 @@ const Footer = forwardRef((props, ref) => {
         <div ref={imageDivSecond} className="image-div image-div-second">
           <Image
             src="/oikea-käsi-sivulle.svg"
-            alt="Kuva 2"
+            alt="Right pointing finger image"
             layout="responsive"
             width={500}
             height={500}
