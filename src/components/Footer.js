@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
-/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef, forwardRef } from "react";
+import Image from 'next/image';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
@@ -20,8 +20,8 @@ const Footer = forwardRef((props, ref) => {
       }
     });
 
-    tl.to(imageDivFirst.current.querySelector('img'), { x: '8%' })
-      .to(imageDivSecond.current.querySelector('img'), { x: '-8%' }, "<");
+    tl.to(imageDivFirst.current.querySelector('.image'), { x: '8%' })
+      .to(imageDivSecond.current.querySelector('.image'), { x: '-8%' }, "<");
 
   }, []);
 
@@ -40,8 +40,26 @@ const Footer = forwardRef((props, ref) => {
   return (
     <footer ref={ref} className="footer">
       <div className="image-container">
-        <div ref={imageDivFirst} className="image-div image-div-first"><img src="/vasen-käsi-sivulle.svg" alt="Kuva 1" loading="lazy" /></div>
-        <div ref={imageDivSecond} className="image-div image-div-second"><img src="/oikea-käsi-sivulle.svg" alt="Kuva 2" loading="lazy" /></div>
+        <div ref={imageDivFirst} className="image-div image-div-first">
+          <Image
+            src="/vasen-käsi-sivulle.svg"
+            alt="Kuva 1"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="image"
+          />
+        </div>
+        <div ref={imageDivSecond} className="image-div image-div-second">
+          <Image
+            src="/oikea-käsi-sivulle.svg"
+            alt="Kuva 2"
+            layout="responsive"
+            width={500}
+            height={500}
+            className="image"
+          />
+        </div>
       </div>
       <div className="contact-div">
         <span>Lets work together</span>
