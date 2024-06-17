@@ -8,7 +8,7 @@ const Hero = forwardRef((props, ref) => {
       {/* <div className="bg"></div> */}
 
       <header ref={ref} className="hero__header">
-        <h2 class="first-text">I am</h2>
+        <h2 className="first-text">I am</h2>
         <h1 className="hero-first-text">Ville</h1>
         <h1 className="hero-second-text">Toimela</h1>
         <h2 className="hero-third-text">Web Developer</h2>
