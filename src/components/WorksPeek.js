@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
@@ -50,18 +51,24 @@ const Banner = () => {
       );
   }, []);
 
-
   return (
     <section className="section-wrapper">
       <div className="works-container">
-        <img ref={banner1Ref} src="/project-roihu.png" alt="Banner 1" loading="lazy" className="banner-image" />
-        <img ref={banner2Ref} src="/project-kissakahvila.png" alt="Banner 2" loading="lazy" className="banner-image" />
-        <img ref={banner3Ref} src="/project-magister.png" alt="Banner 3" loading="lazy" className="banner-image" />
-        <img ref={banner4Ref} src="/project-tammermatic.png" alt="Banner 4" loading="lazy" className="banner-image" />
+        <div ref={banner1Ref} className="banner-image">
+          <Image src="/project-roihu.png" alt="Banner 1" layout="fill" objectFit="contain" priority={true} />
+        </div>
+        <div ref={banner2Ref} className="banner-image">
+          <Image src="/project-kissakahvila.png" alt="Banner 2" layout="fill" objectFit="contain" priority={true} />
+        </div>
+        <div ref={banner3Ref} className="banner-image">
+          <Image src="/project-magister.png" alt="Banner 3" layout="fill" objectFit="contain" priority={true} />
+        </div>
+        <div ref={banner4Ref} className="banner-image">
+          <Image src="/project-tammermatic.png" alt="Banner 4" layout="fill" objectFit="contain" priority={true} />
+        </div>
       </div>
     </section>
   );
 };
-
 
 export default Banner;

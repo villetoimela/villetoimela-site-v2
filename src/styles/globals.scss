@@ -665,31 +665,25 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
   overflow: hidden;
-
-  img {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
-  }
 }
 
 @media (min-width: 768px) {
   .works-container {
     padding: 150px;
+    gap: 40px;
   }
 }
 
 .banner-image {
+  position: relative;
+  width: 100%;
   height: 230px;
-  width: auto;
-  display: block;
 }
 
 @media (min-width: 768px) {
   .banner-image {
     height: 600px;
-    width: auto;
-    display: block;
   }
 }
 
