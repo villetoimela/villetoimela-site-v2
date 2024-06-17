@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
         <title>Ville Toimela - Web Developer</title>
         <meta name="description" content="I am a passionate web developer with some experience in creating diverse websites and web applications." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="Be91ilt0huPVO_J1rnSdajM8i_zm0-E4oiuI5Uh8NgU" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
