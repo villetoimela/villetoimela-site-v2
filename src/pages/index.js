@@ -86,12 +86,6 @@ export default function Home() {
       <ZoomParallax />
       <TitleSection href="work" title="Some of my latest works" />
       <ProjectGallery ref={projects} />
-      {/* <Projects1 /> */}
-      {/* <Projects2 /> */}
-      {/* <FloatingGallery /> */}
-      {/* <ScrollSection /> */}
-      {/* <ParallaxSection /> */}
-      {/* <ScrollSectionShort /> */}
       <TitleSection title="Tech & tools i have been using lately" />
       <Technologies />
       <Footer ref={contact} />
