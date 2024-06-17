@@ -60,7 +60,7 @@ function Perspective() {
         <div ref={perspectiveRef} className="perspective-inner">
           {data.map((project, index) => (
             <div ref={el => setRef(el, index)} key={index} className={project.class}>
-              <img src={project.image} alt={project.text} />
+              <img src={project.image} alt={project.text} loading="lazy" />
               <div className="perspective-desc">
                 <h2>{project.text}</h2>
                 <Link href={project.url}>

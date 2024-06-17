@@ -40,8 +40,8 @@ const Footer = forwardRef((props, ref) => {
   return (
     <footer ref={ref} className="footer">
       <div className="image-container">
-        <div ref={imageDivFirst} className="image-div image-div-first"><img src="/vasen-käsi-sivulle.svg" alt="Kuva 1" /></div>
-        <div ref={imageDivSecond} className="image-div image-div-second"><img src="/oikea-käsi-sivulle.svg" alt="Kuva 2" /></div>
+        <div ref={imageDivFirst} className="image-div image-div-first"><img src="/vasen-käsi-sivulle.svg" alt="Kuva 1" loading="lazy" /></div>
+        <div ref={imageDivSecond} className="image-div image-div-second"><img src="/oikea-käsi-sivulle.svg" alt="Kuva 2" loading="lazy" /></div>
       </div>
       <div className="contact-div">
         <span>Lets work together</span>

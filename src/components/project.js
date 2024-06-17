@@ -36,7 +36,7 @@ export default function Index({ project, index }) {
           <div ref={containerRef} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)} className="project">
               <p>{title1}</p>
               <motion.div variants={anim} animate={isActive ? "open" : "closed"} className="imgContainer">
-                  <img src={src} alt={`${title1} ${title2}`} />
+                  <img src={src} alt={`${title1} ${title2}`} loading="lazy" />
               </motion.div>
               <p>{title2}</p>
           </div>
