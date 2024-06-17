@@ -45,13 +45,13 @@ const Index = forwardRef((props, ref) => {
         </div>
     ) : (
         <div className="left-section" ref={leftSectionRef}>
-            <h4>{title}</h4>
+            <h2>{title}</h2>
         </div>
     );
 
     const rightSection = swap ? (
         <div className="right-section" ref={rightSectionRef}>
-            <h4>{title}</h4>
+            <h2>{title}</h2>
         </div>
     ) : (
         <div className="right-section" ref={rightSectionRef}>
