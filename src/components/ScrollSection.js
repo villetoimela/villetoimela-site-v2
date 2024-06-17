@@ -38,7 +38,7 @@ function ScrollSection() {
                 <br/> <br/>
                 I&apos;ve logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate at least an equal number of hours in coding and continue expanding my knowledge.
               </h3>
-              <img src="/kissa-sivulle.svg" className="kissa-img" />
+              <img src="/kissa-sivulle.svg" className="kissa-img" loading="lazy" />
 
             </div>
             
@@ -46,7 +46,7 @@ function ScrollSection() {
           
           <div className="scroll-section second-section">
             <div className="section-2">
-              <img src="/läppäri-sivulle.svg" className="lappari-img" />
+              <img src="/läppäri-sivulle.svg" className="lappari-img" loading="lazy" />
               <h2>What I do</h2>
               <h3>
                 After an intensive two-year Software Developer training, I had the privilege of working at one of Finland&apos;s most influential marketing agencies. There, I&apos;ve been involved in creating various websites tailored to meet the specific needs of clients. Most of these projects involved building custom WordPress themes. In addition to coding, this role has provided me with invaluable experience in teamwork and interacting effectively with clients.
