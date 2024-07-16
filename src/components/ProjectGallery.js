@@ -5,6 +5,12 @@ import Project from '../components/project';
 const ProjectGallery = forwardRef((props, ref) => {
   const projects = [
     {
+      title1: "Weight",
+      title2: "tracker",
+      src: "project-weightracker.png",
+      href: "https://villetoimela-weight-tracker.netlify.app/"
+    },
+    {
       title1: "SNT",
       title2: "group",
       src: "project-snt.png",
