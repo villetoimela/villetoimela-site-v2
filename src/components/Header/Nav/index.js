@@ -18,7 +18,7 @@ export default function Nav({ projects, home, contact, textsection }) {
 
   const navItems = [
     {
-      title: "Home",
+      title: "Beginning",
       href: "#",
       onClick: scrollToHome,
     },
