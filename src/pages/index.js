@@ -58,7 +58,7 @@ export default function Home() {
 
       <TextSection ref={textsection}
         title="Who am i"
-        content="Hello! I'm a 28-years-old eager Web Developer with about four years of active coding experience. While I've always been intrigued by programming, I officially embarked on my learning journey only four years ago. During this time, I learned many different skills and made some digital ideas real! I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge."
+        content="Hello! I'm a 29-years-old eager Web Developer with about four years of active coding experience. While I've always been intrigued by programming, I officially embarked on my learning journey only five years ago. During this time, I learned many different skills and made some digital ideas real! I've logged tens of thousands of hours playing video games. The passion and commitment I once dedicated to gaming have now transitioned into software development. My aim is to accumulate atleast an equal number of hours in coding and continue expanding my knowledge."
       />
       <TextSection
         title="What i do"
