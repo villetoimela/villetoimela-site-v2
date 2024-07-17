@@ -5,40 +5,16 @@ import Project from '../components/project';
 const ProjectGallery = forwardRef((props, ref) => {
   const projects = [
     {
-      title1: "Jääkiekko",
-      title2: "museo",
-      src: "project-jaakiekkomuseo.png",
-      href: "https://jaakiekkomuseo.fi/"
-    },
-    {
-      title1: "Weight",
-      title2: "tracker",
-      src: "project-weightracker.png",
-      href: "https://villetoimela-weight-tracker.netlify.app/"
+      title1: "Kyocera",
+      title2: "Technologies",
+      src: "project-kyocera.png",
+      href: "https://kyoceratechnologies.com/"
     },
     {
       title1: "SNT",
       title2: "group",
       src: "project-snt.png",
       href: "https://snt-group.fi/"
-    },
-    {
-      title1: "Suvimaen",
-      title2: "klubitalo",
-      src: "project-klubitalo.png",
-      href: "https://suvimaenklubitalo.fi/"
-    },
-    {
-      title1: "Magister",
-      title2: "Solutions",
-      src: "project-magister.png",
-      href: "https://data.magister.fi/"
-    },
-    {
-      title1: "Kyocera",
-      title2: "Technologies",
-      src: "project-kyocera.png",
-      href: "https://kyoceratechnologies.com/"
     },
     {
       title1: "Roihu",
@@ -53,16 +29,40 @@ const ProjectGallery = forwardRef((props, ref) => {
       href: "https://tammermatic.com/"
     },
     {
+      title1: "Suvimaen",
+      title2: "klubitalo",
+      src: "project-klubitalo.png",
+      href: "https://suvimaenklubitalo.fi/"
+    },
+    {
+      title1: "Magister",
+      title2: "Solutions",
+      src: "project-magister.png",
+      href: "https://data.magister.fi/"
+    },
+    {
       title1: "Kontukoti",
       title2: "",
       src: "project-kontu.png",
       href: "https://kontukoti.fi/"
     },
     {
+      title1: "Jääkiekko",
+      title2: "museo",
+      src: "project-jaakiekkomuseo.png",
+      href: "https://jaakiekkomuseo.fi/"
+    },
+    {
       title1: "Sleipner",
       title2: "",
       src: "project-sleipner.png",
       href: "https://sleipner.com/"
+    },
+    {
+      title1: "Weight",
+      title2: "tracker",
+      src: "project-weightracker.png",
+      href: "https://villetoimela-weight-tracker.netlify.app/"
     },
     {
       title1: "Sisuline",
@@ -122,7 +122,6 @@ const ProjectGallery = forwardRef((props, ref) => {
           return <Project key={index} project={project} index={index} />
         })}
         <p class="section-title">..And, of course, Ive had the opportunity to work on many further development projects.</p>
-        <p class="section-title">Deleted some of my works for now, ensuring that the projects can be displayed here.</p>
       </div>
     </main>
   );
