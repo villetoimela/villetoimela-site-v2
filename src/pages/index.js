@@ -90,6 +90,7 @@ export default function Home() {
       <Technologies />
       <Footer ref={contact} />
       <div className="noise"></div>
+      
     </main>
   )
 }
