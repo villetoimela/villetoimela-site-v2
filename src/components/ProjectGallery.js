@@ -101,6 +101,12 @@ const ProjectGallery = forwardRef((props, ref) => {
       href: "https://kampaamo.demo.hiisi.digital/"
     },
     {
+      title1: "Crypto",
+      title2: "tracker",
+      src: "project-crypto-tracker.png",
+      href: "https://nextjs-crypto-app.netlify.app/"
+    },
+    {
       title1: "Juomapeli",
       title2: "",
       src: "project-elijuomapeli.png",
