@@ -17,16 +17,28 @@ const ProjectGallery = forwardRef((props, ref) => {
       href: "https://snt-group.fi/"
     },
     {
-      title1: "Roihu",
-      title2: "Law",
-      src: "project-roihu.png",
-      href: "https://roihulaw.fi/"
-    },
-    {
       title1: "Tammermatic",
       title2: "",
       src: "project-tammermatic.png",
       href: "https://tammermatic.com/"
+    },
+    {
+      title1: "JIS",
+      title2: "Automation",
+      src: "project-jis.png",
+      href: "https://jis.fi/"
+    },
+    {
+      title1: "Jylhä",
+      title2: "logistics",
+      src: "project-jylha.png",
+      href: "https://jylhalogistics.fi/"
+    },
+    {
+      title1: "Roihu",
+      title2: "Law",
+      src: "project-roihu.png",
+      href: "https://roihulaw.fi/"
     },
     {
       title1: "Suvimaen",
