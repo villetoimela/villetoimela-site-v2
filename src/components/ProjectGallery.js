@@ -5,6 +5,12 @@ import Project from '../components/project';
 const ProjectGallery = forwardRef((props, ref) => {
   const projects = [
     {
+      title1: "Pyöräliitto",
+      title2: "",
+      src: "project-pyoraliitto.png",
+      href: "https://pyoraliitto.fi/"
+    },
+    {
       title1: "Kyocera",
       title2: "Technologies",
       src: "project-kyocera.png",

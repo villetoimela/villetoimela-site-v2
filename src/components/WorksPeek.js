@@ -58,7 +58,7 @@ const Banner = () => {
           <Image src="/project-roihu.png" alt="Banner image 1" layout="fill" objectFit="contain" priority={true} />
         </div>
         <div ref={banner2Ref} className="banner-image">
-          <Image src="/project-kissakahvila.png" alt="Banner image 2" layout="fill" objectFit="contain" priority={true} />
+          <Image src="/project-pyoraliitto.png" alt="Banner image 2" layout="fill" objectFit="contain" priority={true} />
         </div>
         <div ref={banner3Ref} className="banner-image">
           <Image src="/project-magister.png" alt="Banner image 3" layout="fill" objectFit="contain" priority={true} />
