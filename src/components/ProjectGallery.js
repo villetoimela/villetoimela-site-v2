@@ -17,6 +17,12 @@ const ProjectGallery = forwardRef((props, ref) => {
       href: "https://kyoceratechnologies.com/"
     },
     {
+      title1: "Lääkärikeskus",
+      title2: "leijonamieli",
+      src: "project-leijonamieli.png",
+      href: "https://perhelaakarikeskus.fi/"
+    },
+    {
       title1: "SNT",
       title2: "group",
       src: "project-snt.png",
